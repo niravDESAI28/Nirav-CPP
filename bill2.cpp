@@ -9,7 +9,7 @@ class customer
     public:
      void getinformation()
      {
-          cout<<"\t\t\t\t~~~ Patel ice-Craem ~~~ \n";
+          cout<<"\t\t\t\t +9~~~ Patel ice-Craem ~~~ \n";
           cout<<"\nCUSTOMER NAME : ";
           cin>>name;
           cout<<"CUSTOMER CONTACT NUMBER : ";
@@ -26,7 +26,7 @@ class customer
 class Show_bill : public customer 
 {
 
-    protected :   
+    private :   
 
       int  GST  ,  discount , Net_bill,bill_amt =0 ;
       int   Bill =0 , quantity;
@@ -36,38 +36,38 @@ class Show_bill : public customer
      public :
          int item1()
       {
-         cout<<"\n \tEnter Qunatity :";
+         cout<<"\nEnter Qunatity :";
          cin>>quantity;
-         Ditems[0] = "DRY FRUIT   = 125 ";
-         return Bill = Bill + quantity*125;
+         Ditems[0] = "DRY FRUIT   = 100 ";
+         return Bill = Bill + quantity*100;
       }
       int item2()
       {
-         cout<<"\n \tEnter Qunatity : "; 
+         cout<<"\nEnter Qunatity : "; 
          cin>>quantity;
-         Ditems[1] = "KAJU BADAM  = 80 ";
+         Ditems[1] = "KAJU BADAM  = 150 ";
          return Bill = Bill + quantity*150;
       }
       int item3()
       {
-         cout<<"\n \tEnter Qunatity : "; 
+         cout<<"\nEnter Qunatity : "; 
          cin>>quantity;
          Ditems[2] = "VENILA   = 40";
          return Bill = Bill + quantity*40;
       }
       int item4()
       {
-         cout<<"\n \tEnter Qunatity : ";
+         cout<<"\nEnter Qunatity : ";
          cin>>quantity;
          Ditems[3] = "CHOCOLATE = 70";
-         return Bill = Bill + quantity*25;
+         return Bill = Bill + quantity*70;
       }
       int item5()
       {
-         cout<<"\n \tEnter Qunatity : "; 
+         cout<<"\nEnter Qunatity : "; 
          cin>>quantity;
          Ditems[4] = "MAVA MALAY  = 60";
-         return Bill = Bill + quantity*15;
+         return Bill = Bill + quantity*60;
       }
 
       int Show_Bill_Amt()
@@ -93,14 +93,14 @@ class Show_bill : public customer
       {
         return Net_bill =   bill_amt +  GST - discount  ;
       }
-      void Show_Net_Bill()
+      void Show_Net_Bill()  
       {
             Show_bill_Items();
-            cout<<"\n\t TOTAL ORDER PRICE  : "<<Show_Bill_Amt()<<endl;
-            cout<<"\n\t GST                : "<<Show_GST()<<endl;
-            cout<<"\n\t DISCOUNT           : "<<Show_disc() <<endl;
-            cout<<"\n\t TOTAL PAY BILL     : "<<Show_Net_bill()<<endl;
-            cout<<"\n\n\t  THANK YOU FOR  VISIT\n\t     HAVE A NICE DAY"<<endl; 
+            cout<<"\n\t TOTAL ORDER PRICE : "<<Show_Bill_Amt()<<endl;
+            cout<<"\n\t GST               : "<<Show_GST()<<endl;
+            cout<<"\n\t DISCOUNT          : "<<Show_disc() <<endl;
+            cout<<"\n\t TOTAL PAY BILL    : "<<Show_Net_bill()<<endl;
+            cout<<"\n\n\t  THANK YOU FOR  VISIT\n\n\t    HAVE A NICE DAY"<<endl; 
       }
      void Show_bill_Items()
       {
@@ -120,17 +120,17 @@ int main ()
     Show_bill a ;
      
         a.getinformation();
-        cout<<"\n\t\t\t ** Menu ** \n";
-        cout<<" \n  [1] DRY FRUIT                       : RS. 125 /- "; 
-        cout<<" \n  [2] KAJU BADAM                      : RS. 80  /- "; 
-        cout<<" \n  [3] VENILA                          : RS. 40  /- "; 
-        cout<<" \n  [4] CHOCOLATE                       : RS. 70  /- ";
-        cout<<" \n  [5] MAVA MALAY                      : RS. 60  /- \n";
+        cout<<"\n\t\t *** Menu *** \n";
+        cout<<" \n  [1] DRY FRUIT                    : RS. 100 /- "; 
+        cout<<" \n  [2] KAJU BADAM                   : RS. 150 /- "; 
+        cout<<" \n  [3] VENILA                       : RS. 40  /- "; 
+        cout<<" \n  [4] CHOCOLATE                    : RS. 70  /- ";
+        cout<<" \n  [5] MAVA MALAY                   : RS. 60  /- \n";
        
         int choice ;
        do
         {
-         cout<<"\n Enter your choice : ";
+         cout<<"\nEnter your choice : ";
          cin>>choice ;
         switch (choice)
         {
@@ -155,6 +155,6 @@ int main ()
         }
 
       } while (choice!=0);
-            a.showinformation();
-            a.Show_Net_Bill();
+        a.showinformation();
+        a.Show_Net_Bill();    
 }

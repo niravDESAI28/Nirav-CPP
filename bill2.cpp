@@ -9,7 +9,7 @@ class customer
     public:
      void getinformation()
      {
-          cout<<"\t\t\t\t +9~~~ Patel ice-Craem ~~~ \n";
+          cout<<"\t\t\t\t ~~~ Patel ice-Craem ~~~ \n";
           cout<<"\nCUSTOMER NAME : ";
           cin>>name;
           cout<<"CUSTOMER CONTACT NUMBER : ";
@@ -38,35 +38,35 @@ class Show_bill : public customer
       {
          cout<<"\nEnter Qunatity :";
          cin>>quantity;
-         Ditems[0] = "DRY FRUIT   = 100 ";
+         Ditems[0] = "DRY FRUIT\t   = 100 ";
          return Bill = Bill + quantity*100;
       }
       int item2()
       {
          cout<<"\nEnter Qunatity : "; 
          cin>>quantity;
-         Ditems[1] = "KAJU BADAM  = 150 ";
+         Ditems[1] = "KAJU BADAM\t  = 150 ";
          return Bill = Bill + quantity*150;
       }
       int item3()
       {
          cout<<"\nEnter Qunatity : "; 
          cin>>quantity;
-         Ditems[2] = "VENILA   = 40";
+         Ditems[2] = "VENILA\t   = 40";
          return Bill = Bill + quantity*40;
       }
       int item4()
       {
          cout<<"\nEnter Qunatity : ";
          cin>>quantity;
-         Ditems[3] = "CHOCOLATE = 70";
+         Ditems[3] = "CHOCOLATE\t = 70";
          return Bill = Bill + quantity*70;
       }
       int item5()
       {
          cout<<"\nEnter Qunatity : "; 
          cin>>quantity;
-         Ditems[4] = "MAVA MALAY  = 60";
+         Ditems[4] = "MAVA MALAY\t  = 60";
          return Bill = Bill + quantity*60;
       }
 

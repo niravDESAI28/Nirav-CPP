@@ -23,7 +23,6 @@ class Greater
         }
     }
 };
-
 Greater big(Greater m, Greater n)
 {
     Greater g;

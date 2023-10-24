@@ -18,7 +18,7 @@ class test
     }
 
     friend test operator+(test x, test y)
-    {
+    {1
         test z;
         z.l = x.l + y.l;
         z.w = x.w + y.w;
